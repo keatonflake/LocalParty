@@ -1,10 +1,11 @@
 <html>
   <head>
     <title>Place Searches</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script type="module" src="./main.js"></script>
+    <script src="./script.js"></script>
   </head>
   <body>
 
@@ -18,8 +19,8 @@
           </div>
     </div>
 
-      <button class='goButton'>Food</button>
-      <button class='goButton'>Activity</button>
+      <button onclick="shuffle(food)" class='goButton'>Food</button>
+      <button onclick="shuffle(activities)" class='goButton'>Activity</button>
       <div class="here"></div>
       </div>
     </div>
@@ -34,28 +35,3 @@
     ></script>
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Party</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <div class='main'>
-        <div class='box'>
-        <h1>Plan the Perfect Activity</h1>
-        <p>Use the program below to get a random activity.</p>
-        <div class='googleMaps'></div>
-  
-        <button class='goButton'>Food</button>
-        <button class='goButton'>Activity</button>
-        <div class="here"></div>
-        </div>
-      </div>
-</body>
-</html> -->
