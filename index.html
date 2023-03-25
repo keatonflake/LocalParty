@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
     <script type="module" src="./main.js"></script>
-    <script src="./script.js"></script>
   </head>
   <body>
     <header>
@@ -25,11 +24,11 @@
             <!-- <h1>Your Choice was...</h1> -->
           </div>
     </div>
-
-      <button onclick="shuffle(food)" class='goButton'>Food</button>
-      <button onclick="shuffle(activities)" class='goButton'>Activity</button>
+      <div id="result"></div>
+      <button class='goButton' id="food">Food</button>
+      <button class='goButton' id="activity">Activity</button>
       <br>
-      <input type="text" placeholder="Search Anything Or AnyWhere" id="input">
+      <input type="text" placeholder="Search Anything Or Anywhere" id="input">
       <button id="go" >GO</button>
       <div class="here"></div>
       </div>

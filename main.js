@@ -11,8 +11,9 @@ var searchInput = document.getElementById("input").value;
 
 const activities = [
   'bowling',
-  'movie',
-  'hiking'
+  'to the movie theater',
+  'hiking',
+  'roller skating',
 ];
 
 const food = [
@@ -36,11 +37,28 @@ return Math.floor(Math.random() * max);
 function shuffle(list){
 let i = getRandomInt(list.length)
 console.log(list[i]);
-// searchitem(shuffledItem);
+var shuffleResult = list[i];
 }
 
 function initMap() {
   var searchInput = document.getElementById("input").value;
+  console.log(searchInput);
+
+  if (searchInput == ""){
+    if (document.getElementById("food").style.backgroundColor == "white") {
+      searchInput = food[getRandomInt(food.length)];
+      document.getElementById("result").innerHTML = "directions to nearest " + searchInput + "!";
+    } else {
+      searchInput = activities[getRandomInt(activities.length)];
+      document.getElementById("result").innerHTML = "Lets go " + searchInput + "!";
+    }
+    console.log(searchInput);
+  }
+
+
+
+
+  
   const sydney = new google.maps.LatLng(-33.867, 151.195);
 
   infowindow = new google.maps.InfoWindow();
@@ -79,7 +97,19 @@ function createMarker(place) {
     infowindow.open(map);
   });
 }
-document.getElementById("go").addEventListener("click", initMap = initMap)
+document.getElementById("go").addEventListener("click", initMap = initMap);
+
+document.getElementById("activity").addEventListener("click", function(){
+	document.getElementById("activity").style.backgroundColor = "white";})
+document.getElementById("activity").addEventListener("click", function(){
+  document.getElementById("food").style.backgroundColor = "#BFDBF7";})
+document.getElementById("activity").addEventListener("click", initMap = initMap);
+
+document.getElementById("food").addEventListener("click", function(){
+	document.getElementById("food").style.backgroundColor = "white";})
+document.getElementById("food").addEventListener("click", function(){
+  document.getElementById("activity").style.backgroundColor = "#BFDBF7";})
+document.getElementById("food").addEventListener("click", initMap = initMap);
 
 // var words = ['Family Fun', 'Restaurant', 'Date Night', 'At Home Getaway'],
 //     part,
