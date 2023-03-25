@@ -131,6 +131,7 @@ p{
   width: 500px;
   border-radius: 30px;
   margin-top: 15px;
+  border: none;
 }
 #go{
   font-size: 20px;

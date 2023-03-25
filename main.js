@@ -36,11 +36,26 @@ return Math.floor(Math.random() * max);
 function shuffle(list){
 let i = getRandomInt(list.length)
 console.log(list[i]);
-// searchitem(shuffledItem);
+var shuffleResult = list[i];
 }
 
 function initMap() {
   var searchInput = document.getElementById("input").value;
+  console.log(searchInput);
+
+  if (searchInput == ""){
+    if (document.getElementById("food").style.backgroundColor == "white") {
+      searchInput = food[getRandomInt(food.length)];
+    } else {
+      searchInput = activities[getRandomInt(activities.length)];
+    }
+    console.log(searchInput);
+  }
+
+document.getElementById("result").innerHTML = "Directions to " + searchInput;
+
+
+  
   const sydney = new google.maps.LatLng(-33.867, 151.195);
 
   infowindow = new google.maps.InfoWindow();
@@ -79,5 +94,17 @@ function createMarker(place) {
     infowindow.open(map);
   });
 }
-document.getElementById("go").addEventListener("click", initMap = initMap)
+document.getElementById("go").addEventListener("click", initMap = initMap);
+
+document.getElementById("activity").addEventListener("click", function(){
+	document.getElementById("activity").style.backgroundColor = "white";})
+document.getElementById("activity").addEventListener("click", function(){
+  document.getElementById("food").style.backgroundColor = "#BFDBF7";})
+document.getElementById("activity").addEventListener("click", initMap = initMap);
+
+document.getElementById("food").addEventListener("click", function(){
+	document.getElementById("food").style.backgroundColor = "white";})
+document.getElementById("food").addEventListener("click", function(){
+  document.getElementById("activity").style.backgroundColor = "#BFDBF7";})
+document.getElementById("food").addEventListener("click", initMap = initMap);
 
