@@ -118,7 +118,7 @@ document.getElementById("food").addEventListener("click", function(){
   document.getElementById("activity").style.backgroundColor = "#BFDBF7";})
 document.getElementById("food").addEventListener("click", initMap = initMap);
 
-var words = ['Family Fun', 'Restaurant', 'Date Night', 'At Home Getaway'],
+var words = ['Family Fun ', 'Restaurant ', 'Date Night ', 'At Home Getaway '],
     part,
     i = 0,
     offset = 0,
