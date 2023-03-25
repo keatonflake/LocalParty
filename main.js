@@ -11,8 +11,9 @@ var searchInput = document.getElementById("input").value;
 
 const activities = [
   'bowling',
-  'movie',
-  'hiking'
+  'to the movie theater',
+  'hiking',
+  'roller skating',
 ];
 
 const food = [
@@ -46,13 +47,15 @@ function initMap() {
   if (searchInput == ""){
     if (document.getElementById("food").style.backgroundColor == "white") {
       searchInput = food[getRandomInt(food.length)];
+      document.getElementById("result").innerHTML = "directions to nearest " + searchInput + "!";
     } else {
       searchInput = activities[getRandomInt(activities.length)];
+      document.getElementById("result").innerHTML = "Lets go " + searchInput + "!";
     }
     console.log(searchInput);
   }
 
-document.getElementById("result").innerHTML = "Directions to " + searchInput;
+
 
 
   

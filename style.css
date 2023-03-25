@@ -136,3 +136,8 @@ p{
 #go{
   font-size: 20px;
 }
+#result{
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+}
