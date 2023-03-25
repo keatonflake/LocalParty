@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
+@media only screen and (max-width: 768px) {
+  body{height: 100vh;}
+}
+
 /* Header and Footer */
 header, footer {
   background-color: #022b3a;
@@ -154,3 +158,5 @@ p{
   color: #BFDBF7;
   display: inline;
 }
+
+
