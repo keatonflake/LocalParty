@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Place Searches</title>
+    <script src="https://kit.fontawesome.com/a32455dc80.js" crossorigin="anonymous"></script>
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
@@ -11,7 +12,10 @@
     <script src="./script.js"></script>
   </head>
   <body>
-
+    <header>
+        <img src="logo3.png" alt="Local Party Logo" id="header-logo">
+        <p>Local Party</p>
+    </header>
     <div class='main'>
       <div class='box'>
       <h1>Plan the Perfect Activity</h1>
@@ -29,7 +33,22 @@
       <button id="go" >GO</button>
       <div class="here"></div>
       </div>
+      <div class="search">
+        <h5>Or search down here</h5>
+        <!---maybe put an arrow icon here?-->
+        <input type="text" class="searchInput">
+      </div>
     </div>
+    <footer>
+      <img src="logo.png" alt="Local Party Logo" class="footer-logo">
+      <div>
+        <a href="https://www.linkedin.com/in/alexis-rudy/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #7a9cd6;">     Alexis   Rudy</i></a>
+        <a href="https://www.linkedin.com/in/keaton-flake/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #7a9cd6;">     Keaton   Flake</i></a>
+        <a href="https://www.linkedin.com/in/michael-menjivar-2b224a214/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #7a9cd6;">     Michael   Menjivar</i></a>
+        <p>Holy Viking Creations &#169;2023</p>
+      </div>
+      <img src="hacklogo.jpeg" alt="Hack USU Logo" class="footer-logo">
+    </footer>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyPhW4OuwQREXWBiGpeTycWdWxUuWY39E&callback=initMap&libraries=places&v=weekly"
       defer
