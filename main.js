@@ -51,7 +51,6 @@ console.log(list[i]);
 function initMap() {
   var searchInput = document.getElementById("input").value;
   console.log(searchInput);
-
   document.getElementById("result").innerHTML = "You searched for: " + searchInput + ".";
 
   if (searchInput == ""){
@@ -64,7 +63,6 @@ function initMap() {
     }
     console.log(searchInput);
   }
-
 
 
 
@@ -91,6 +89,8 @@ function initMap() {
 
       map.setCenter(results[0].geometry.location);
     }
+
+
   });
 }
 
@@ -108,6 +108,10 @@ function createMarker(place) {
   });
 }
 document.getElementById("go").addEventListener("click", initMap = initMap);
+document.getElementById("go").addEventListener("click", function(){
+  document.getElementById("input").value = "";
+});
+
 
 document.getElementById("activity").addEventListener("click", function(){
 	document.getElementById("activity").style.backgroundColor = "white";})
