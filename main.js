@@ -38,7 +38,6 @@ let i = getRandomInt(list.length)
 console.log(list[i]);
 // searchitem(shuffledItem);
 }
-var shuffledItem = list[i];
 
 function initMap() {
   var searchInput = document.getElementById("input").value;
@@ -51,7 +50,7 @@ function initMap() {
   });
 
   const request = {
-    query: shuffledItem,
+    query: searchInput,
     fields: ["name", "geometry"],
   };
 
