@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
+ 
  #map {
     height: 50vw;
     width: 50vw;
     border: 3px solid white;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgb(225, 216, 216) , rgb(115, 115, 248));
+    /* background-image: linear-gradient(to right, rgb(225, 216, 216) , rgb(115, 115, 248)); */
     text-align: center;
     color: white;
     font-size: 3vw;
+    margin: auto 0;
   }
   
   /* 
@@ -23,19 +27,20 @@
     padding: 0;
   }
   .map_box{
-    width: 100vw;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
 
 
   .box{
     margin: 0 auto;
-    background-color: beige;
+    background-color: #1F7A8C;
     border-radius: 10px;
-    border-color: green;
+    border-color: #1F7A8C;
     text-align: center;
     width: 75%;
     padding: 1.5%;
@@ -43,14 +48,19 @@
 p{
     font-size: 1.2rem;
 }
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
 .goButton{
     border: none;
-    background-color: blue;
+    background-color: #BFDBF7;
     width: 10rem;
     padding: 20px;
     font-size: 1.2rem;
     border-radius: 20px;
     font-weight: bold;
+    margin-top: 30px;
 }
 .goButton:hover{
     cursor: pointer;
