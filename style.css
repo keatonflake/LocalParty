@@ -1,0 +1,30 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 50vw;
+    width: 50vw;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(225, 216, 216) , rgb(115, 115, 248));
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .map_box{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

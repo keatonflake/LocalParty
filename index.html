@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Place Searches</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="map_box">
+        <div id="map">
+            <h1>Your Choice was...</h1>
+        </div>
+    </div>
+    <button id="go">GO</button>
+
+    <input type="text" id="input">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyPhW4OuwQREXWBiGpeTycWdWxUuWY39E&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
