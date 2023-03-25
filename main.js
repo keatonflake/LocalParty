@@ -52,6 +52,8 @@ function initMap() {
   var searchInput = document.getElementById("input").value;
   console.log(searchInput);
 
+  document.getElementById("result").innerHTML = "You searched for: " + searchInput + ".";
+
   if (searchInput == ""){
     if (document.getElementById("food").style.backgroundColor == "white") {
       searchInput = food[getRandomInt(food.length)];
@@ -63,7 +65,6 @@ function initMap() {
     console.log(searchInput);
   }
 
-  document.getElementById("result").innerHTML = "You searched for: " + searchInput + ".";
 
 
 
