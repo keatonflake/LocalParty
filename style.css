@@ -4,7 +4,9 @@
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
- 
+ body{
+  background-color: #efe5f2;
+ }
  #map {
     height: 50vw;
     width: 50vw;
