@@ -4,6 +4,7 @@
 header, footer {
   background-color: #022b3a;
   color: #ffffff;
+  max-width: 100vw;
 }
 
 header {
@@ -78,7 +79,7 @@ footer div p {
     font-family: 'Capriola', sans-serif;
     height: 100%;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1600px;
     padding: 0;
   }
   .map_box{
@@ -87,6 +88,7 @@ footer div p {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    max-width: 1000px;
   }
 
   .box{
@@ -99,6 +101,7 @@ footer div p {
     padding: 1.2%;
     margin-top: 30px;
     margin-bottom: 30px;
+    max-width: 1400px;
 }
 p{
     font-size: 1.2rem;
