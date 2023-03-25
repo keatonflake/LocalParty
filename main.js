@@ -67,7 +67,7 @@ function initMap() {
 
 
   
-  const sydney = new google.maps.LatLng(-33.867, 151.195);
+  const sydney = new google.maps.LatLng(-41.735210, -111.834862);
 
   infowindow = new google.maps.InfoWindow();
   map = new google.maps.Map(document.getElementById("map"), {
