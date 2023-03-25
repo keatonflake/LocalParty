@@ -74,9 +74,11 @@ footer div p {
    */
   html,
   body {
+
     font-family: 'Capriola', sans-serif;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1400px;
     padding: 0;
   }
   .map_box{
