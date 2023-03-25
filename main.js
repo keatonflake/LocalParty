@@ -37,6 +37,7 @@ const food = [
   'Texas Roadhouse'
 ];
 
+
 function getRandomInt(max) {
 return Math.floor(Math.random() * max);
 }
