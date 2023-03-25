@@ -1,3 +1,30 @@
+/* Header and Footer */
+header, footer {
+  background-color: #022b3a;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  padding: 20px 20% 20px 20%;
+  align-items: center;
+  gap: 5%;
+}
+
+header p:nth-child(1) {
+  font-size: 64px;
+  margin: 0;
+}
+
+header p:nth-child(2) {
+  font-size: 32px;
+  margin: 0;
+}
+
+footer {
+
+}
+
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
