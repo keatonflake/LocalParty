@@ -1,8 +1,47 @@
 let map;
 let service;
 let infowindow;
+var searchInput = document.getElementById("input").value;
+// console.log("|" + searchInput + "|");
+
+// function searchitem(shuffledItem) {
+//   var shuffledItem = shuffledItem
+//   console.log(shuffledItem)
+// }
+
+const activities = [
+  'bowling',
+  'movie',
+  'hiking'
+];
+
+const food = [
+  'pizza',
+  'Chinese',
+  'Italian',
+  "McDonald's",
+  'Taco Bell',
+  "Wendy's",
+  "Del Taco", 
+  "Arby's",
+  'Chick-fil-a',
+  "Carl's Jr.",
+  'Texas Roadhouse'
+];
+
+function getRandomInt(max) {
+return Math.floor(Math.random() * max);
+}
+
+function shuffle(list){
+let i = getRandomInt(list.length)
+console.log(list[i]);
+// searchitem(shuffledItem);
+}
+var shuffledItem = list[i];
 
 function initMap() {
+  var searchInput = document.getElementById("input").value;
   const sydney = new google.maps.LatLng(-33.867, 151.195);
 
   infowindow = new google.maps.InfoWindow();
@@ -12,7 +51,7 @@ function initMap() {
   });
 
   const request = {
-    query: document.getElementById("input").value,
+    query: shuffledItem,
     fields: ["name", "geometry"],
   };
 
