@@ -12,14 +12,21 @@ var searchInput = document.getElementById("input").value;
 const activities = [
   'bowling',
   'to the movie theater',
-  'hiking',
+  'trail hiking',
   'roller skating',
+  'to the arcade',
+  'to the mall',
+  'to the park',
+  'to a museum',
+  'play pickleball',
+  'camping',
+
 ];
 
 const food = [
-  'pizza',
-  'Chinese',
-  'Italian',
+  'pizza restaurant',
+  'Chinese restaurant',
+  'Italian restaurant',
   "McDonald's",
   'Taco Bell',
   "Wendy's",
@@ -37,7 +44,7 @@ return Math.floor(Math.random() * max);
 function shuffle(list){
 let i = getRandomInt(list.length)
 console.log(list[i]);
-var shuffleResult = list[i];
+// var shuffleResult = list[i];
 }
 
 function initMap() {
