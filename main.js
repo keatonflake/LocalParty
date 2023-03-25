@@ -54,7 +54,7 @@ function initMap() {
   if (searchInput == ""){
     if (document.getElementById("food").style.backgroundColor == "white") {
       searchInput = food[getRandomInt(food.length)];
-      document.getElementById("result").innerHTML = "directions to nearest " + searchInput + "!";
+      document.getElementById("result").innerHTML = "Directions to nearest " + searchInput + "!";
     } else {
       searchInput = activities[getRandomInt(activities.length)];
       document.getElementById("result").innerHTML = "Lets go " + searchInput + "!";
