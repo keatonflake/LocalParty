@@ -139,11 +139,16 @@ p{
   border: none;
 }
 #go{
+  font-family: 'Capriola', sans-serif;
   font-size: 20px;
   background-color: #BFDBF7;
   border: none;
   padding: 10px;
   border-radius: 10px;
+}
+#go:hover{
+  cursor: pointer;
+  background-color: #ffffff;
 }
 #result{
   color: white;
