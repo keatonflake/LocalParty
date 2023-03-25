@@ -63,6 +63,7 @@ function initMap() {
     console.log(searchInput);
   }
 
+  document.getElementById("result").innerHTML = "You searched for: " + searchInput + ".";
 
 
 
